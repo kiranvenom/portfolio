@@ -35,11 +35,11 @@ const WorkAni = () => {
 		<div className='flex justify-between items-start h-screen'>
 			<h1 className='px-6 py-2 border rounded-full mt-4'>Explore Work</h1>
 			<video
-				// loop
+				loop
 				ref={vidRef}
 				className='rounded-lg'
 				muted
-				// autoPlay
+				autoPlay
 				width='200px'
 				src='./src/assets/video/coding.mp4'
 				style={{ transform: 'scale(1)', y: '0px' }}></video>
