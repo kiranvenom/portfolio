@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+@font-face {
+	font-family: pri;
+	src: url(./assets/fonts/grafik-font/dxgrafik-semibold.otf);
+}
+
+@font-face {
+	font-family: sec;
+	src: url(./assets/fonts/mekito-font/jtmekitoregular-wowy3.otf);
+}
+
+:root {
+	--primary-color: rgb(42, 42, 42);
+	--secondary-Color: #fff;
+	--primary-font: pri;
+	--secondary-font: sec;
+
+	--dark-primary: #0d1321;
+	--dark-secondary: #eef5db;
+	--dark-three: #283d3b;
+	--dark-onyx: #2e3532;
+	--dark-accent: #2ba84a;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
+::selection {
+	background-color: var(--dark-accent);
+	/* color: var(--dark-onyx); */
+}
+
+body {
+	font-family: var(--primary-font);
+	background-color: var(--dark-primary);
+	color: var(--dark-secondary);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	height: 4rem;
+	align-items: center;
+}
+
+.hero {
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 5rem;
+}
+
+.hero p {
+	font-family: var(--secondary-font);
+	width: 60ch;
+}
