@@ -33,7 +33,9 @@ const WorkAni = () => {
 
 	return (
 		<div className='flex justify-between items-start h-screen'>
-			<h1 className='px-6 py-2 border rounded-full mt-4'>Explore Work</h1>
+			<h1 className='px-6 py-2 border rounded-full mt-10'>
+				Explore Work
+			</h1>
 			<video
 				loop
 				ref={vidRef}
@@ -43,7 +45,9 @@ const WorkAni = () => {
 				width='200px'
 				src='./src/assets/video/coding.mp4'
 				style={{ transform: 'scale(1)', y: '0px' }}></video>
-			<h1 className='px-6 py-2 border rounded-full mt-4'>Get in Touch</h1>
+			<h1 className='px-6 py-2 border rounded-full mt-10'>
+				Get in Touch
+			</h1>
 		</div>
 	);
 };

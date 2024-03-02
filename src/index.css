@@ -80,3 +80,16 @@ nav {
 	font-family: var(--secondary-font);
 	width: 60ch;
 }
+
+.gradient {
+	background: radial-gradient(
+				circle,
+				rgb(56, 58, 107) 0%,
+				rgba(47, 78, 101, 0) 40%
+			) -10rem center,
+		radial-gradient(circle, #32363e 0%, rgba(47, 78, 101, 0) 40%) 6rem
+			center,
+		#0d1321;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

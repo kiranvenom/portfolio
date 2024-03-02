@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection = () => {
 	return (
 		<>
-			<div className='hero'>
+			<div className='hero gradient'>
 				<h1 style={{ lineHeight: '4.6rem' }}>
 					Pixels & Passion: Exploring My Creative Canvas
 				</h1>
