@@ -17,9 +17,10 @@ const WorkAni = () => {
 				scrub: true,
 				// markers: true,
 			},
-			y: 350,
+			y: 400,
 			scale: 5.5,
 			duration: 5,
+			borderRadius: 5,
 		});
 
 		// Clean up function
@@ -39,11 +40,11 @@ const WorkAni = () => {
 			<video
 				loop
 				ref={vidRef}
-				className='rounded-lg'
+				className='rounded-[50px]'
 				muted
 				autoPlay
 				width='200px'
-				src='./src/assets/video/coding.mp4'
+				src='./src/assets/video/final.mp4'
 				style={{ transform: 'scale(1)', y: '0px' }}></video>
 			<h1 className='px-6 py-2 border rounded-full mt-10'>
 				Get in Touch

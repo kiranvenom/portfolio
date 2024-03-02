@@ -7,8 +7,8 @@ import RecentWorks from './Components/RecentWorks';
 const App = () => {
 	return (
 		<>
+			<Nav />
 			<div className='container'>
-				<Nav />
 				<HeroSection />
 				<WorkAni />
 				<RecentWorks />
