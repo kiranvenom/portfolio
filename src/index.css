@@ -14,6 +14,7 @@ html,
 body {
 	width: 100%;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 @font-face {
@@ -109,4 +110,35 @@ nav {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: rgb(85, 85, 85);
+}
+
+.navBorder {
+	border: 1px solid #4e4e4e;
+	transform: translateX(-50%);
+}
+
+.card {
+	transition: all 0.3s ease-in-out;
+}
+
+.card:nth-child(2) {
+	margin-top: 10rem;
+}
+.card:nth-child(3) {
+	margin-top: -8rem;
+}
+
+.card:nth-child(1):hover {
+	background-color: #c93202;
+}
+.card:nth-child(2):hover {
+	background-color: #c6cece;
+	color: #0d1321;
+}
+.card:nth-child(3):hover {
+	background-color: var(--dark-accent);
+}
+.card:nth-child(4):hover {
+	background-color: #decf3e;
+	color: #0d1321;
 }
