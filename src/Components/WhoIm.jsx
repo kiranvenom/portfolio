@@ -3,7 +3,7 @@ import React from 'react';
 const WhoIm = () => {
 	return (
 		<>
-			<div className='h-[70vh] flex flex-col justify-center items-start'>
+			<div className='h-[70vh] flex flex-col justify-center items-start my-14'>
 				<h1 className='text-9xl font-extrabold'>
 					Who
 					<br /> I'am
@@ -21,7 +21,7 @@ const WhoIm = () => {
 						understanding of HTML, CSS, and JavaScript, along with
 						expertise in modern frameworks like React and Vue.js.
 					</h1>
-					<h1 className='self-end w-1/2'>
+					<div className='self-end w-1/2'>
 						Whether it's optimizing performance, ensuring
 						cross-browser compatibility, or implementing responsive
 						designs, I'm committed to delivering user-centric
@@ -30,7 +30,7 @@ const WhoIm = () => {
 						<h1 className='w-[fit-content] px-6 py-2 border rounded-full mt-4'>
 							Contact Me
 						</h1>
-					</h1>
+					</div>
 				</div>
 			</div>
 		</>
