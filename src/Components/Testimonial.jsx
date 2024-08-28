@@ -22,7 +22,7 @@ const Testimonial = () => {
 					slidesPerView={3}
 					loop={true}
 					autoplay={{
-						delay: 5000,
+						delay: 1000,
 					}}
 					speed={1000}
 					navigation={{ nextEl: '.left', prevEl: '.right' }}

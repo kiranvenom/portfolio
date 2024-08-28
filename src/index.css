@@ -146,3 +146,15 @@ nav {
 .testimonalSection {
 	user-select: none;
 }
+
+.heroBefore::before {
+	content: 'Explore My Creative Canvas';
+	font-size: 1rem;
+	color: #4a5568;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 0.5rem;
+}
