@@ -1,8 +1,10 @@
 import { FaArrowRight } from 'react-icons/fa6';
 import { FaArrowLeft } from 'react-icons/fa6';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import TestimonialQuote from './TestimonalQuote';
+import { Autoplay, Navigation } from 'swiper/modules';
+
+import 'swiper/css';
 
 const Testimonial = () => {
 	return (
@@ -10,39 +12,55 @@ const Testimonial = () => {
 			<div className='max-w-[1200px] m-auto flex justify-between w-full mb-10'>
 				<h1 className='text-5xl'>Testimonial</h1>
 				<div className='flex gap-6'>
-					<FaArrowLeft />
-					<FaArrowRight  />
+					<FaArrowLeft className='cursor-pointer left w-[40px] border h-[40px] p-3 rounded-full' />
+					<FaArrowRight className='cursor-pointer right w-[40px] border h-[40px] p-3 rounded-full' />
 				</div>
 			</div>
-			<div>
+			<div className='testimonalSection'>
 				<Swiper
-					spaceBetween={50}
+					spaceBetween={20}
 					slidesPerView={3}
-					onSlideChange={() => console.log('slide change')}
-					onSwiper={(swiper) => console.log(swiper)}>
+					loop={true}
+					autoplay={{
+						delay: 5000,
+					}}
+					speed={1000}
+					navigation={{ nextEl: '.left', prevEl: '.right' }}
+					modules={[Autoplay, Navigation]}>
 					<SwiperSlide>
-						<TestimonialQuote />
+						<TestimonialQuote
+							quote='simple and good looking website'
+							src='src/assets/images/prakash.jpg'
+							name='Prakash - Neras Tech'
+						/>
 					</SwiperSlide>
 					<SwiperSlide>
-						<TestimonialQuote />
+						<TestimonialQuote
+							quote='good edu website'
+							src='src/assets/images/nandish.jpg'
+							name='Nandish - Bhanusutha Academy'
+						/>
 					</SwiperSlide>
 					<SwiperSlide>
-						<TestimonialQuote />
+						<TestimonialQuote
+							quote='good website'
+							src='src/assets/images/krishna.jpg'
+							name='Krishna - webtech solution'
+						/>
 					</SwiperSlide>
 					<SwiperSlide>
-						<TestimonialQuote />
+						<TestimonialQuote
+							quote='surely work with you again'
+							src='src/assets/images/skeltron.jpg'
+							name='Zeeshan - Skeltron Info Tech'
+						/>
 					</SwiperSlide>
 					<SwiperSlide>
-						<TestimonialQuote />
-					</SwiperSlide>
-					<SwiperSlide>
-						<TestimonialQuote />
-					</SwiperSlide>
-					<SwiperSlide>
-						<TestimonialQuote />
-					</SwiperSlide>
-					<SwiperSlide>
-						<TestimonialQuote />
+						<TestimonialQuote
+							quote='cool web design and development'
+							src='src/assets/images/khedda.jpg'
+							name='Vijay - Khedda Resorts'
+						/>
 					</SwiperSlide>
 				</Swiper>
 			</div>

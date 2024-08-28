@@ -1,5 +1,5 @@
 import { FaWhatsapp } from 'react-icons/fa';
-import { IoMdArrowUp } from 'react-icons/io';
+import ScrollToTop from './ScrollToTop';
 
 const Footer = () => {
 	return (
@@ -38,7 +38,7 @@ const Footer = () => {
 				<h1>
 					©Kiran<sup>®</sup>
 				</h1>
-				<IoMdArrowUp />
+				<ScrollToTop />
 			</div>
 		</>
 	);

@@ -142,3 +142,7 @@ nav {
 	background-color: #decf3e;
 	color: #0d1321;
 }
+
+.testimonalSection {
+	user-select: none;
+}

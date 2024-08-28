@@ -8,6 +8,7 @@ import Cards from './Components/Cards';
 import Testimonial from './Components/Testimonial';
 import Marquee1 from './Components/Marquee';
 import Footer from './Components/Footer';
+import SocialHandels from './Components/SocialHandels';
 
 const App = () => {
 	return (
@@ -23,6 +24,7 @@ const App = () => {
 			<Testimonial />
 			<Marquee1 />
 			<div className='container'>
+				<SocialHandels />
 				<Footer />
 			</div>
 		</>

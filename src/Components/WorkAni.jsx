@@ -1,15 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const WorkAni = () => {
 	const vidRef = useRef(null);
 
 	useEffect(() => {
-		gsap.registerPlugin(ScrollTrigger);
+		const t1 = gsap.timeline();
 
 		// Animation
-		gsap.to(vidRef.current, {
+		t1.to(vidRef.current, {
 			scrollTrigger: {
 				trigger: vidRef.current,
 				start: '0% 78%',
