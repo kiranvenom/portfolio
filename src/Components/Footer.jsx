@@ -35,9 +35,7 @@ const Footer = () => {
 			</div>
 
 			<div className='flex justify-between items-center mt-[6rem] mb-4'>
-				<h1>
-					©Kiran<sup>®</sup>
-				</h1>
+				<h1>©Kiran</h1>
 				<ScrollToTop />
 			</div>
 		</>

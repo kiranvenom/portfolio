@@ -27,6 +27,11 @@ body {
 	src: url(./assets/fonts/mekito-font/jtmekitoregular-wowy3.otf);
 }
 
+@font-face {
+	font-family: blatant;
+	src: url(./assets/fonts/blatant-font/Blatant.otf);
+}
+
 :root {
 	--primary-color: rgb(42, 42, 42);
 	--secondary-Color: #fff;
@@ -78,7 +83,6 @@ nav {
 }
 
 .hero p {
-	font-family: var(--secondary-font);
 	width: 60ch;
 }
 
@@ -154,7 +158,20 @@ nav {
 	font-weight: bold;
 	font-family: 'Arial', sans-serif;
 	letter-spacing: 0.05rem;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	display: block;
 	margin-bottom: 0.5rem;
+	font-family: blatant;
+}
+
+.textStroke {
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px white;
+	color: transparent;
+	transition: all 0.3s ease;
+}
+
+.textStroke:hover {
+	-webkit-text-fill-color: white;
+	color: white;
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { CiCircleChevDown } from 'react-icons/ci';
 import kiran1 from '../assets/images/KiranPics/kiran1.jpg';
 import kiran2 from '../assets/images/KiranPics/kiran2.jpg';
 import kiran3 from '../assets/images/KiranPics/kiran3.jpg';
@@ -38,11 +39,11 @@ const HeroSection = () => {
 			<h1
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={handleMouseLeave}
-				className='heroBefore'
+				className='heroBefore z-40'
 				style={{ lineHeight: '4.6rem' }}>
 				Pixels & Passion
 			</h1>
-			<p className='mt-6'>
+			<p className='mt-6 font-blatant'>
 				A skilled MERN stack developer with hands-on experience in
 				MongoDB, Express, React, and Node.js. Passionate about crafting
 				dynamic web applications, tackling complex challenges, and
@@ -50,8 +51,15 @@ const HeroSection = () => {
 				development to transform creative ideas into functional,
 				user-centric solutions.
 			</p>
+			<div className='mt-6'>
+				<CiCircleChevDown
+					strokeWidth={1}
+					size={30}
+					className='animate-bounce'
+				/>
+			</div>
 			{isImageVisible && (
-				<div className='absolute top-[20%] right-[20%] w-[200px] h-[300px] pointer-events-none rounded-lg overflow-hidden'>
+				<div className='absolute top-[2%] right-[20%] w-[200px] h-[300px] pointer-events-none rounded-lg overflow-hidden'>
 					<img
 						className='w-full h-full object-cover'
 						src={images[currentImageIndex]}

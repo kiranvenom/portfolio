@@ -10,7 +10,7 @@ const ScrollToTop = () => {
 
 	return (
 		<button onClick={handleUp}>
-			<IoMdArrowUp />
+			<IoMdArrowUp size={30} />
 		</button>
 	);
 };

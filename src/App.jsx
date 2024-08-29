@@ -1,32 +1,17 @@
-import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 import Nav from './Components/Nav';
-import HeroSection from './Components/HeroSection';
-import WorkAni from './Components/WorkAni';
-import RecentWorks from './Components/RecentWorks';
-import WhoIm from './Components/WhoIm';
-import Cards from './Components/Cards';
-import Testimonial from './Components/Testimonial';
-import Marquee1 from './Components/Marquee';
-import Footer from './Components/Footer';
-import SocialHandels from './Components/SocialHandels';
+import CustomCursor from './Components/CustomCursor';
 
 const App = () => {
 	return (
 		<>
 			<Nav />
-			<div className='container'>
-				<HeroSection />
-				<WorkAni />
-				<RecentWorks />
-				<WhoIm />
-				<Cards />
-			</div>
-			<Testimonial />
-			<Marquee1 />
-			<div className='container'>
-				<SocialHandels />
-				<Footer />
-			</div>
+			<CustomCursor />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/work' element={<div>fd</div>} />
+			</Routes>
 		</>
 	);
 };

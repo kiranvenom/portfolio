@@ -32,7 +32,7 @@ const MyComponent = () => {
 	}, [isPlaying]);
 
 	return (
-		<nav className='flex text-white fixed top-0 w-full max-w-[1200px] z-10 backdrop-blur-md rounded-full mt-6 navBorder left-[50%]'>
+		<nav className='flex text-white fixed top-0 w-full max-w-[1200px] z-50 backdrop-blur-md rounded-full mt-6 navBorder left-[50%]'>
 			<div className='logo ml-6'>Kiran</div>
 			{isPlaying ? (
 				<MdMusicNote

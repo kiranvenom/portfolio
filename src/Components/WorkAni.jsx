@@ -37,8 +37,8 @@ const WorkAni = () => {
 	return (
 		<div className='flex justify-between items-start h-screen'>
 			<MagneticButton>
-				<h1 className='px-6 py-2 border rounded-full mt-10'>
-					Explore Work
+				<h1 className='px-6 py-2 border rounded-full mt-10 font-blatant'>
+					Explore My Projects
 				</h1>
 			</MagneticButton>
 
@@ -52,7 +52,7 @@ const WorkAni = () => {
 				src='./src/assets/video/final.mp4'
 				style={{ transform: 'scale(1)', y: '0px' }}></video>
 			<MagneticButton>
-				<h1 className='px-6 py-2 border rounded-full mt-10'>
+				<h1 className='px-6 py-2 border rounded-full mt-10 font-blatant'>
 					Get in Touch
 				</h1>
 			</MagneticButton>
