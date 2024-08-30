@@ -13,7 +13,6 @@ import SocialHandels from '../Components/SocialHandels';
 const Home = () => {
 	return (
 		<>
-			<Nav />
 			<div className='container'>
 				<HeroSection />
 				<WorkAni />

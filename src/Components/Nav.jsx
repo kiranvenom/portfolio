@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import lofiAudio from '../assets/audio/lofi.mp3';
 import { MdMusicNote } from 'react-icons/md';
 import { MdMusicOff } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const MyComponent = () => {
 	const [isPlaying, setIsPlaying] = useState(false);
@@ -33,7 +34,7 @@ const MyComponent = () => {
 
 	return (
 		<nav className='flex text-white fixed top-0 w-full max-w-[1200px] z-50 backdrop-blur-md rounded-full mt-6 navBorder left-[50%]'>
-			<div className='logo ml-6'>Kiran</div>
+			<Link to='/' className='logo ml-6'>Kiran</Link>
 			{isPlaying ? (
 				<MdMusicNote
 					className='cursor-pointer'

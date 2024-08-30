@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import MagneticButton from './MagneticButton';
+import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 
 const WorkAni = () => {
@@ -37,9 +38,11 @@ const WorkAni = () => {
 	return (
 		<div className='flex justify-between items-start h-screen'>
 			<MagneticButton>
-				<h1 className='px-6 py-2 border rounded-full mt-10 font-blatant'>
+				<Link
+					to='/work'
+					className='px-6 py-2 border rounded-full mt-10 font-blatant'>
 					Explore My Projects
-				</h1>
+				</Link>
 			</MagneticButton>
 
 			<video

@@ -12,8 +12,8 @@ const Testimonial = () => {
 			<div className='max-w-[1200px] m-auto flex justify-between w-full mb-10'>
 				<h1 className='text-5xl'>Testimonial</h1>
 				<div className='flex gap-6'>
-					<FaArrowLeft className='cursor-pointer left w-[40px] border h-[40px] p-3 rounded-full' />
-					<FaArrowRight className='cursor-pointer right w-[40px] border h-[40px] p-3 rounded-full' />
+					<FaArrowLeft className='cursor-pointer left w-[40px] border h-[40px] p-3 rounded-full hover:scale-110 transition-all' />
+					<FaArrowRight className='cursor-pointer right w-[40px] border h-[40px] p-3 rounded-full hover:scale-110 transition-all' />
 				</div>
 			</div>
 			<div className='testimonalSection'>

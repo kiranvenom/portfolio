@@ -51,13 +51,39 @@ const HeroSection = () => {
 				development to transform creative ideas into functional,
 				user-centric solutions.
 			</p>
+
 			<div className='mt-6'>
 				<CiCircleChevDown
+					onClick={() => {
+						const start = window.scrollY;
+						const target = start + 625;
+						const duration = 800;
+						const startTime = performance.now();
+
+						const scroll = (currentTime) => {
+							const elapsedTime = currentTime - startTime;
+							const progress = Math.min(
+								elapsedTime / duration,
+								1,
+							);
+							window.scrollTo(
+								0,
+								start + (target - start) * progress,
+							);
+
+							if (elapsedTime < duration) {
+								requestAnimationFrame(scroll);
+							}
+						};
+
+						requestAnimationFrame(scroll);
+					}}
 					strokeWidth={1}
 					size={30}
 					className='animate-bounce'
 				/>
 			</div>
+
 			{isImageVisible && (
 				<div className='absolute top-[2%] right-[20%] w-[300px] h-[300px] pointer-events-none rounded-full overflow-hidden'>
 					<img
