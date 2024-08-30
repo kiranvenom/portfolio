@@ -23,7 +23,9 @@ const EnhancedMinimalButton = ({ children, href }) => {
 					repeat: Infinity,
 					repeatType: 'loop',
 				}}></motion.div>
-			<span className='relative z-10 font-blatant text-2xl'>{children}</span>
+			<span className='relative z-10 font-blatant text-2xl'>
+				{children}
+			</span>
 		</motion.a>
 	);
 };

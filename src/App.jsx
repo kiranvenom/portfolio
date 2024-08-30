@@ -8,7 +8,7 @@ const App = () => {
 	return (
 		<>
 			<Nav />
-			{/* <CustomCursor /> */}
+			<CustomCursor />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/work' element={<Work />} />
