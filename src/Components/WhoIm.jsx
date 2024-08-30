@@ -4,14 +4,13 @@ const WhoIm = () => {
 	return (
 		<>
 			<div className='h-[70vh] flex flex-col justify-center items-start my-14'>
-				<h1 className='text-9xl font-extrabold'>
-					Who
-					<br /> I'am
+				<h1 className='text-8xl font-extrabold textStroke transition-all'>
+					Who am I?
 				</h1>
 				<div
 					style={{ fontFamily: 'var(--secondary-font)' }}
 					className='flex w-full items-start justify-start flex-col'>
-					<h1 className='w-1/2'>
+					<h1 className='w-1/2 font-blatant'>
 						Hello there! I'm Kiran, a passionate front-end engineer
 						with a flair for crafting engaging digital experiences.
 						With a blend of creativity and technical prowess, I
@@ -21,7 +20,7 @@ const WhoIm = () => {
 						understanding of HTML, CSS, and JavaScript, along with
 						expertise in modern frameworks like React and Vue.js.
 					</h1>
-					<div className='self-end w-1/2'>
+					<div className='self-end w-1/2 font-blatant'>
 						Whether it's optimizing performance, ensuring
 						cross-browser compatibility, or implementing responsive
 						designs, I'm committed to delivering user-centric

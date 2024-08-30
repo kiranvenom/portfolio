@@ -4,7 +4,7 @@ import { IoMdArrowUp } from 'react-icons/io';
 const ScrollToTop = () => {
 	const handleUp = () => {
 		console.log('scrolling to top');
-		window.scrollTo({ top: 50, behavior: 'smooth' });
+		window.scrollTo({ top: 0, behavior: 'smooth' });
 		console.log(window.innerHeight);
 	};
 
