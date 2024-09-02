@@ -7,7 +7,6 @@ import WhoIm from '../Components/WhoIm';
 import Cards from '../Components/Cards';
 import Testimonial from '../Components/Testimonial';
 import Marquee1 from '../Components/Marquee';
-import Footer from '../Components/Footer';
 import SocialHandels from '../Components/SocialHandels';
 
 const Home = () => {
@@ -21,11 +20,10 @@ const Home = () => {
 				<Cards />
 			</div>
 			<Testimonial />
-			<Marquee1 />
 			<div className='container'>
 				<SocialHandels />
-				<Footer />
 			</div>
+			<Marquee1 />
 		</>
 	);
 };

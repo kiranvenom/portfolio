@@ -1,6 +1,12 @@
 import React from 'react';
 import { FaNodeJs, FaJs, FaReact, FaGithub } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiVite, SiVercel } from 'react-icons/si';
+import {
+	SiMongodb,
+	SiExpress,
+	SiVite,
+	SiVercel,
+	SiTailwindcss,
+} from 'react-icons/si';
 
 const iconMap = {
 	nodejs: <FaNodeJs size={30} color='#8DC84B' />,
@@ -11,6 +17,7 @@ const iconMap = {
 	vite: <SiVite size={30} color='#9D5CFE' />,
 	vercel: <SiVercel size={30} color='#000000' />,
 	github: <FaGithub size={30} color='#000000' />,
+	tailwind: <SiTailwindcss size={30} color='#38BDF8' />,
 };
 
 const IconRenderer = ({ icons }) => {

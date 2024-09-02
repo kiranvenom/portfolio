@@ -1,0 +1,59 @@
+{
+	"projects": [
+		{
+			"id": 1,
+			"title": "gulfLine",
+			"technologies": [
+				"react",
+				"nodejs",
+				"js",
+				"vite",
+				"vercel",
+				"github",
+				"tailwind"
+			],
+			"visitLink": "https://www.youtube.com/@tomisloading",
+			"about": {
+				"title": "Elevate your home search with LoftLoom",
+				"description": [
+					"The SaaS product designed for discovering tailored, exceptional living spaces.",
+					"We undertook meticulous UX research, improved the overall user experience, designed visual mockups for every page with our design system, and produced functional prototypes."
+				]
+			},
+			"showcaseImages": [
+				{
+					"imagePath": "assets/worksImg/laptopMockup.jpg"
+				},
+				{
+					"imagePath": "assets/worksImg/mobileMockup.jpg"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"title": "sa",
+			"technologies": [
+				"react",
+				"nodejs",
+				"js",
+				"vite",
+				"vercel",
+				"github",
+				"tailwind"
+			],
+			"visitLink": "https://www.youtube.com/@tomisloading",
+			"about": {
+				"title": "Elevate your home search with LoftLoom",
+				"description": [
+					"The SaaS product designed for discovering tailored, exceptional living spaces.",
+					"We undertook meticulous UX research, improved the overall user experience, designed visual mockups for every page with our design system, and produced functional prototypes."
+				]
+			},
+			"showcaseImages": [
+				{
+					"imagePath": "assets/worksImg/mobileMockup.jpg"
+				}
+			]
+		}
+	]
+}

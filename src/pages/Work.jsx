@@ -7,7 +7,15 @@ import img2 from '../assets/worksImg/laptopMockup.jpg';
 import img3 from '../assets/worksImg/mobileMockup.jpg';
 
 const Work = () => {
-	const icons = ['react', 'nodejs', 'js', 'vite', 'vercel', 'github'];
+	const icons = [
+		'react',
+		'nodejs',
+		'js',
+		'vite',
+		'vercel',
+		'github',
+		'tailwind',
+	];
 	return (
 		<div className='mt-[8rem]'>
 			<div className='container'>

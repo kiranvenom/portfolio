@@ -4,10 +4,9 @@ import ScrollToTop from './ScrollToTop';
 const Footer = () => {
 	return (
 		<>
-			<div className='flex justify-between items-end'>
-				<h1 className='text-9xl font-extrabold'>
-					Let's <br />
-					Talk
+			<div className='flex justify-between items-end mt-28'>
+				<h1 className='text-9xl font-extrabold leading-[50%]'>
+					Let's Talk
 				</h1>
 				<h1 className='w-[fit-content] px-6 py-2 border rounded-full mt-4 mb-6'>
 					Contact Me
@@ -19,14 +18,16 @@ const Footer = () => {
 					<div>
 						<h4>Email</h4>
 						<a
-							className='text-2xl'
+							className='text-2xl font-blatant'
 							href='mailto:km060360@gmail.com'>
 							km060360@gmail.com
 						</a>
 					</div>
 					<div>
 						<h4>Call</h4>
-						<a className='text-2xl' href='tel:+9741734482'>
+						<a
+							className='text-2xl font-blatant'
+							href='tel:+9741734482'>
 							+91 9741734482
 						</a>
 					</div>

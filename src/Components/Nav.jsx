@@ -4,8 +4,11 @@ import { MdMusicNote } from 'react-icons/md';
 import { MdMusicOff } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
-const MyComponent = () => {
+const MyComponent = ({ setIsMenuOpen }) => {
 	const [isPlaying, setIsPlaying] = useState(false);
+	const openMenu = () => {
+		setIsMenuOpen(true);
+	};
 
 	useEffect(() => {
 		const audio = new Audio(lofiAudio);
@@ -34,7 +37,9 @@ const MyComponent = () => {
 
 	return (
 		<nav className='flex text-white fixed top-0 w-full max-w-[1200px] z-50 backdrop-blur-md rounded-full mt-6 navBorder left-[50%]'>
-			<Link to='/' className='logo ml-6'>Kiran</Link>
+			<Link to='/' className='logo ml-6'>
+				Kiran
+			</Link>
 			{isPlaying ? (
 				<MdMusicNote
 					className='cursor-pointer'
@@ -48,7 +53,11 @@ const MyComponent = () => {
 					onClick={toggleAudio}
 				/>
 			)}
-			<div className='menu mr-6'>Menu</div>
+			<div className='menu mr-6'>
+				<h2 className='cursor-pointer' onClick={openMenu}>
+					Menu
+				</h2>
+			</div>
 		</nav>
 	);
 };

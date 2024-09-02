@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md';
 const SocialHandels = () => {
 	return (
 		<>
-			<div className='flex flex-col items-center'>
+			<div className='flex flex-col items-center mt-24'>
 				<h1 className='text-4xl text-center mb-8'>
 					Checkout my <br />
 					Social Handels
