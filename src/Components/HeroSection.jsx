@@ -3,6 +3,7 @@ import { CiCircleChevDown } from 'react-icons/ci';
 import kiran1 from '../assets/images/KiranPics/kiran1png.png';
 import kiran2 from '../assets/images/KiranPics/kiran2png.png';
 import kiran3 from '../assets/images/KiranPics/kiran3png.png';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const images = [kiran1, kiran2, kiran3];
 
@@ -85,13 +86,20 @@ const HeroSection = () => {
 			</div>
 
 			{isImageVisible && (
-				<div className='absolute top-[2%] right-[20%] w-[300px] h-[300px] pointer-events-none rounded-full overflow-hidden'>
-					<img
-						className='w-full h-full object-cover'
-						src={images[currentImageIndex]}
-						alt='Kiran Pic'
-					/>
-				</div>
+				<AnimatePresence mode='wait'>
+					<motion.div
+						initial={{ scale: 0 }}
+						animate={{ scale: 1 }}
+						// exit={{ scale: 0 }}
+						transition={{ duration: 0.2, easings: 'easeInOut' }}
+						className='absolute top-[2%] right-[20%] w-[300px] h-[300px] pointer-events-none rounded-full overflow-hidden'>
+						<img
+							className='w-full h-full object-cover'
+							src={images[currentImageIndex]}
+							alt='Kiran Pic'
+						/>
+					</motion.div>
+				</AnimatePresence>
 			)}
 		</div>
 	);

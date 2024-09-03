@@ -18,7 +18,11 @@ const Menu = ({ setIsMenuOpen }) => {
 	const div1Variants = {
 		hidden: { y: '100%', opacity: 0 },
 		visible: { y: '0%', opacity: 1, transition: { duration: 0.5 } },
-		exit: { y: '100%', opacity: 0, transition: { duration: 0.5 } },
+		exit: {
+			y: '100%',
+			opacity: 0,
+			transition: { duration: 0.5 },
+		},
 	};
 
 	const div2Variants = {
@@ -62,11 +66,11 @@ const Menu = ({ setIsMenuOpen }) => {
 								<div onClick={closeMenu}>
 									<RevealLinks
 										linkName='Projects'
-										to='/allWorks'
+										to='/works'
 									/>
 								</div>
-								{/* <RevealLinks linkName='Services' /> */}
-								{/* <RevealLinks linkName='Contacts' /> */}
+								<RevealLinks linkName='Services' />
+								<RevealLinks linkName='Contacts' />
 							</ul>
 						</div>
 						<div className='w-1/2'>

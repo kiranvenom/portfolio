@@ -8,8 +8,11 @@ import Footer from './Components/Footer';
 import AllWorks from './pages/AllWorks';
 import Menu from './Components/Menu';
 import { AnimatePresence } from 'framer-motion';
+import useScrollToTop from './hook/useScrollToTop';
+import Footer1 from './Components/Footer1';
 
 const App = () => {
+	useScrollToTop();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
@@ -23,12 +26,10 @@ const App = () => {
 			<Routes>
 				<Route index path='/' element={<Home />} />
 				<Route index path='/works' element={<AllWorks />} />
-				{/* <Route path='/work' element={<Work />} /> */}
+				<Route index path='/works/:id' element={<Work />} />
 			</Routes>
 
-			<div className='container'>
-				<Footer />
-			</div>
+			<Footer1 />
 		</>
 	);
 };

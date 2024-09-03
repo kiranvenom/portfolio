@@ -12,12 +12,25 @@
 				"github",
 				"tailwind"
 			],
-			"visitLink": "https://www.youtube.com/@tomisloading",
+			"visitLink": "https://gulflinesa.com/",
 			"about": {
-				"title": "Elevate your home search with LoftLoom",
+				"title": "GulfLine-SA - Riyad",
 				"description": [
-					"The SaaS product designed for discovering tailored, exceptional living spaces.",
-					"We undertook meticulous UX research, improved the overall user experience, designed visual mockups for every page with our design system, and produced functional prototypes."
+					"I collaborated with Gulf Line, a prominent general contracting company in Saudi Arabia, to enhance their digital presence. My role involved conducting thorough UX research, refining the user journey, and designing intuitive interfaces that align with the company's commitment to quality and innovation. The project included crafting visual mockups, developing prototypes, and ensuring a seamless user experience across all devices, effectively representing Gulf Line's dedication to excellence in the construction industry."
+				]
+			},
+			"technologiesDesc": {
+				"description": [
+					"In this project, I utilized a tech stack including React, Node.js, and JavaScript, with Vite for efficient development and Vercel for seamless deployment. The interface was styled with Tailwind CSS, and version control was managed through GitHub, ensuring a smooth and responsive user experience across all devices."
+				]
+			},
+			"responsibilities": {
+				"description": [
+					"Conducted UX research to understand user needs and preferences, leading to actionable insights for improving the website's user experience.",
+					"Designed and developed intuitive and visually appealing user interfaces using React and Tailwind CSS, ensuring alignment with Gulf Line's brand identity.",
+					"Implemented responsive design principles to ensure a seamless user experience across various devices and screen sizes.",
+					"Utilized Vite for efficient development processes and managed deployment through Vercel to ensure timely and reliable site updates.",
+					"Maintained version control and collaboration through GitHub, enabling effective team coordination and project tracking."
 				]
 			},
 			"showcaseImages": [
@@ -31,7 +44,7 @@
 		},
 		{
 			"id": 2,
-			"title": "sa",
+			"title": "somename2",
 			"technologies": [
 				"react",
 				"nodejs",
@@ -41,15 +54,115 @@
 				"github",
 				"tailwind"
 			],
-			"visitLink": "https://www.youtube.com/@tomisloading",
+			"visitLink": "https://gulflinesa.com/",
 			"about": {
-				"title": "Elevate your home search with LoftLoom",
+				"title": "GulfLine-SA - Riyad",
 				"description": [
-					"The SaaS product designed for discovering tailored, exceptional living spaces.",
-					"We undertook meticulous UX research, improved the overall user experience, designed visual mockups for every page with our design system, and produced functional prototypes."
+					"I collaborated with Gulf Line, a prominent general contracting company in Saudi Arabia, to enhance their digital presence. My role involved conducting thorough UX research, refining the user journey, and designing intuitive interfaces that align with the company's commitment to quality and innovation. The project included crafting visual mockups, developing prototypes, and ensuring a seamless user experience across all devices, effectively representing Gulf Line's dedication to excellence in the construction industry."
+				]
+			},
+			"technologiesDesc": {
+				"description": [
+					"In this project, I utilized a tech stack including React, Node.js, and JavaScript, with Vite for efficient development and Vercel for seamless deployment. The interface was styled with Tailwind CSS, and version control was managed through GitHub, ensuring a smooth and responsive user experience across all devices."
+				]
+			},
+			"responsibilities": {
+				"description": [
+					"Conducted UX research to understand user needs and preferences, leading to actionable insights for improving the website's user experience.",
+					"Designed and developed intuitive and visually appealing user interfaces using React and Tailwind CSS, ensuring alignment with Gulf Line's brand identity.",
+					"Implemented responsive design principles to ensure a seamless user experience across various devices and screen sizes.",
+					"Utilized Vite for efficient development processes and managed deployment through Vercel to ensure timely and reliable site updates.",
+					"Maintained version control and collaboration through GitHub, enabling effective team coordination and project tracking."
 				]
 			},
 			"showcaseImages": [
+				{
+					"imagePath": "assets/worksImg/laptopMockup.jpg"
+				},
+				{
+					"imagePath": "assets/worksImg/mobileMockup.jpg"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"title": "somename3",
+			"technologies": [
+				"react",
+				"nodejs",
+				"js",
+				"vite",
+				"vercel",
+				"github",
+				"tailwind"
+			],
+			"visitLink": "https://gulflinesa.com/",
+			"about": {
+				"title": "GulfLine-SA - Riyad",
+				"description": [
+					"I collaborated with Gulf Line, a prominent general contracting company in Saudi Arabia, to enhance their digital presence. My role involved conducting thorough UX research, refining the user journey, and designing intuitive interfaces that align with the company's commitment to quality and innovation. The project included crafting visual mockups, developing prototypes, and ensuring a seamless user experience across all devices, effectively representing Gulf Line's dedication to excellence in the construction industry."
+				]
+			},
+			"technologiesDesc": {
+				"description": [
+					"In this project, I utilized a tech stack including React, Node.js, and JavaScript, with Vite for efficient development and Vercel for seamless deployment. The interface was styled with Tailwind CSS, and version control was managed through GitHub, ensuring a smooth and responsive user experience across all devices."
+				]
+			},
+			"responsibilities": {
+				"description": [
+					"Conducted UX research to understand user needs and preferences, leading to actionable insights for improving the website's user experience.",
+					"Designed and developed intuitive and visually appealing user interfaces using React and Tailwind CSS, ensuring alignment with Gulf Line's brand identity.",
+					"Implemented responsive design principles to ensure a seamless user experience across various devices and screen sizes.",
+					"Utilized Vite for efficient development processes and managed deployment through Vercel to ensure timely and reliable site updates.",
+					"Maintained version control and collaboration through GitHub, enabling effective team coordination and project tracking."
+				]
+			},
+			"showcaseImages": [
+				{
+					"imagePath": "assets/worksImg/laptopMockup.jpg"
+				},
+				{
+					"imagePath": "assets/worksImg/mobileMockup.jpg"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"title": "somename4",
+			"technologies": [
+				"react",
+				"nodejs",
+				"js",
+				"vite",
+				"vercel",
+				"github",
+				"tailwind"
+			],
+			"visitLink": "https://gulflinesa.com/",
+			"about": {
+				"title": "GulfLine-SA - Riyad",
+				"description": [
+					"I collaborated with Gulf Line, a prominent general contracting company in Saudi Arabia, to enhance their digital presence. My role involved conducting thorough UX research, refining the user journey, and designing intuitive interfaces that align with the company's commitment to quality and innovation. The project included crafting visual mockups, developing prototypes, and ensuring a seamless user experience across all devices, effectively representing Gulf Line's dedication to excellence in the construction industry."
+				]
+			},
+			"technologiesDesc": {
+				"description": [
+					"In this project, I utilized a tech stack including React, Node.js, and JavaScript, with Vite for efficient development and Vercel for seamless deployment. The interface was styled with Tailwind CSS, and version control was managed through GitHub, ensuring a smooth and responsive user experience across all devices."
+				]
+			},
+			"responsibilities": {
+				"description": [
+					"Conducted UX research to understand user needs and preferences, leading to actionable insights for improving the website's user experience.",
+					"Designed and developed intuitive and visually appealing user interfaces using React and Tailwind CSS, ensuring alignment with Gulf Line's brand identity.",
+					"Implemented responsive design principles to ensure a seamless user experience across various devices and screen sizes.",
+					"Utilized Vite for efficient development processes and managed deployment through Vercel to ensure timely and reliable site updates.",
+					"Maintained version control and collaboration through GitHub, enabling effective team coordination and project tracking."
+				]
+			},
+			"showcaseImages": [
+				{
+					"imagePath": "assets/worksImg/laptopMockup.jpg"
+				},
 				{
 					"imagePath": "assets/worksImg/mobileMockup.jpg"
 				}

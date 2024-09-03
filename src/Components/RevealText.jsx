@@ -8,8 +8,8 @@ export const RevealText = ({ myNumber, isHovered }) => {
 	);
 };
 
-const DURATION = 0.25;
-const STAGGER = 0.05;
+const DURATION = 0.5;
+const STAGGER = 0.1;
 
 const FlipLink = ({ children, isHovered }) => {
 	const text = String(children);

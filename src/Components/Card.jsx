@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { RevealText } from './RevealText';
 
-const Card = ({ myNumber = 20 }) => {
+const Card = ({ myNumber = 20, desc = 'proj' }) => {
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
@@ -11,9 +11,11 @@ const Card = ({ myNumber = 20 }) => {
 			onMouseLeave={() => setIsHovered(false)}>
 			<h1 className='flex'>
 				<RevealText myNumber={myNumber} isHovered={isHovered} />
-				<sup className='text-5xl'>+</sup>
+				<sup className='text-6xl'>+</sup>
 			</h1>
-			<h1 className='self-end text-4xl font-extralight font-blatant'>Projects</h1>
+			<h1 className='self-end text-4xl font-extralight font-blatant'>
+				{desc}
+			</h1>
 		</div>
 	);
 };

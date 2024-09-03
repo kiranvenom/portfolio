@@ -11,7 +11,7 @@ const RecentWorks = () => {
 				<div
 					style={{ fontFamily: 'var(--secondary-font)' }}
 					className='flex justify-between w-full mt-10 items-center'>
-					<h1 className='capitalize'>
+					<h1 className='capitalize font-blatant'>
 						in the creative wilderness, <br /> client find My Work
 						truly <br /> beloved
 					</h1>

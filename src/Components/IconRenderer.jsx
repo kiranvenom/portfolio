@@ -23,7 +23,7 @@ const iconMap = {
 const IconRenderer = ({ icons }) => {
 	return (
 		<div className='icon-container flex items-center gap-2 bg-white px-2 py-2 rounded-lg'>
-			{icons.map((iconName) => (
+			{icons?.map((iconName) => (
 				<span key={iconName} className='icon'>
 					{iconMap[iconName] || null}
 				</span>
