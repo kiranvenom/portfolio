@@ -3,6 +3,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import MagneticButton from './MagneticButton';
 import { Link } from 'react-router-dom';
+import video from '../assets/video/final.mp4';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const WorkAni = () => {
@@ -52,7 +54,7 @@ const WorkAni = () => {
 				muted
 				autoPlay
 				width='200px'
-				src='./src/assets/video/final.mp4'
+				src={video}
 				style={{ transform: 'scale(1)', y: '0px' }}></video>
 			<MagneticButton>
 				<h1 className='px-6 py-2 border rounded-full mt-10 font-blatant text-xl'>
