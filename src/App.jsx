@@ -22,7 +22,7 @@ const App = () => {
 			<AnimatePresence>
 				{isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
 			</AnimatePresence>
-			<CustomCursor />
+			{/* <CustomCursor /> */}
 
 			<Routes>
 				<Route index path='/' element={<Home />} />

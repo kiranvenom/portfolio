@@ -1,4 +1,5 @@
 import { CiCircleChevDown } from 'react-icons/ci';
+import ContactForm from '../Components/ContactForm';
 
 const Contact = () => {
 	const date = new Date();
@@ -27,13 +28,16 @@ const Contact = () => {
 						className='animate-bounce mt-4'
 					/>
 				</div>
-				<div className='h-[75vh] border'>
+				<div className='h-[75vh]'>
 					<div className='flex items-center justify-between'>
 						<h2 className='text-6xl font-blatant'>Say Hello!</h2>
 						<h2 className='text-4xl font-blatant text-[#767E7F]'>{`${hours} : ${minutes} ${ampm}`}</h2>
 					</div>
-					<div className='border h-full'></div>
+					<div className='h-full'>
+						<ContactForm />
+					</div>
 				</div>
+				<div className='h-[10vh] mt-16'></div>
 			</div>
 		</div>
 	);
