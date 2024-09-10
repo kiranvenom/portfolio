@@ -7,7 +7,7 @@ import { ReactLenis } from 'lenis/react';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<ReactLenis root options={{ lerp: 0.05 }}>
+		<ReactLenis root options={{ lerp: 0.09, smoothWheel: true }}>
 			<BrowserRouter>
 				<App />
 			</BrowserRouter>

@@ -10,13 +10,17 @@ const Marquee1 = () => {
 					className='font-bold text-9xl uppercase text-[#2c385b]'
 					direction={direction === 'down' ? 'right' : 'left'}
 					autoFill>
-					--- UI / UX --- Web Development --- FrontEnd --- BackEnd ---
+					<h2 className='mx-10'>Web-Development</h2>
+					<h2 className='mx-10'>FrontEnd</h2>
+					<h2 className='mx-10'>BackEnd</h2>
 				</Marquee>
 				<Marquee
 					className='font-bold text-9xl uppercase text-[#2c385b]'
 					direction={direction !== 'down' ? 'right' : 'left'}
 					autoFill>
-					--- Let's Dive In! ---
+					<h2 className='mx-10'>Web-Development</h2>
+					<h2 className='mx-10'>FrontEnd</h2>
+					<h2 className='mx-10'>BackEnd</h2>
 				</Marquee>
 			</div>
 		</>

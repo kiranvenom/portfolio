@@ -4,6 +4,9 @@ import { MdMusicNote } from 'react-icons/md';
 import { MdMusicOff } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
+import { RiMenu3Fill } from 'react-icons/ri';
+import MagneticButton from './MagneticButton';
+
 const MyComponent = ({ setIsMenuOpen }) => {
 	const [isPlaying, setIsPlaying] = useState(false);
 	const openMenu = () => {
@@ -54,9 +57,19 @@ const MyComponent = ({ setIsMenuOpen }) => {
 				/>
 			)}
 			<div className='menu mr-6'>
-				<h2 className='cursor-pointer' onClick={openMenu}>
-					Menu
-				</h2>
+				<div
+					className='cursor-pointer flex items-center gap-4'
+					onClick={openMenu}>
+					<h2>Menu</h2>{' '}
+					<MagneticButton>
+						<div>
+							<RiMenu3Fill
+								size={40}
+								className='border border-slate-500 rounded-full p-2'
+							/>
+						</div>
+					</MagneticButton>
+				</div>
 			</div>
 		</nav>
 	);

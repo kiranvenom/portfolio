@@ -3,6 +3,8 @@ import { RiInstagramFill } from 'react-icons/ri';
 import { FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
+import links from '../utils/links';
+
 const SocialHandels = () => {
 	return (
 		<>
@@ -11,23 +13,25 @@ const SocialHandels = () => {
 					Checkout my <br />
 					Social Handels
 				</h1>
+
 				<a
-					className='flex items-center w-[50vw] justify-between text-4xl border-b pb-4 mb-4 hover:w-[52vw] transition-all'
+					className='flex items-center w-[50vw] justify-between text-4xl border-b pb-4 mb-4 hover:w-[60vw] transition-all duration-500'
 					target='_blank'
-					href='https://www.linkedin.com/in/kiran-kumar-m-495a6a1b7/'>
+					href={`${links.linkedIn}`}>
 					<h1 className='font-blatant'>LinkedIn</h1>
 					<ImLinkedin color='blue' />
 				</a>
 				<a
-					className='flex items-center w-[50vw] justify-between text-4xl border-b pb-4 mb-4 hover:w-[52vw] transition-all'
-					href='mailto:km060360@gmail.com'>
+					className='flex items-center w-[50vw] justify-between text-4xl border-b pb-4 mb-4 hover:w-[60vw] transition-all duration-500'
+					target='_blank'
+					href={`mailto:${links.email}`}>
 					<h1 className='font-blatant'>Email</h1>
 					<MdEmail color='red' />
 				</a>
 				<a
-					className='flex items-center w-[50vw] justify-between text-4xl border-b pb-4 mb-16 hover:w-[52vw] transition-all'
+					className='flex items-center w-[50vw] justify-between text-4xl border-b pb-4 mb-16 hover:w-[60vw] transition-all duration-500'
 					target='_blank'
-					href='https://github.com/kiranvenom/'>
+					href={`${links.gitHub}`}>
 					<h1 className='font-blatant'>Git Hub</h1>
 					<FaGithub />
 				</a>

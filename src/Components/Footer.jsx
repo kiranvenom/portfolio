@@ -1,18 +1,19 @@
 import { FaWhatsapp } from 'react-icons/fa';
 import ScrollToTop from './ScrollToTop';
 import MagneticButton from './MagneticButton';
+import MovingText from './MovingText';
 
 const Footer = () => {
 	return (
 		<>
 			<div className='container'>
 				<div className='flex justify-between items-end mt-28'>
-					<h1 className='text-9xl font-extrabold leading-[50%]'>
+					<h1 className='text-9xl font-extrabold leading-[50%] font-blatant'>
 						Let's Talk
 					</h1>
-					<h1 className='w-[fit-content] px-6 py-2 border rounded-full mt-4 mb-6'>
+					{/* <h1 className='w-[fit-content] px-6 py-2 border rounded-full mt-4 mb-6'>
 						Contact Me
-					</h1>
+					</h1> */}
 				</div>
 
 				<div className='flex justify-between my-[2rem] py-[2rem] border-t border-b'>
@@ -34,7 +35,11 @@ const Footer = () => {
 							</a>
 						</div>
 					</div>
-					<FaWhatsapp size={50} color='#0EC045' />
+					<MagneticButton>
+						<div>
+							<FaWhatsapp size={50} color='#0EC045' />
+						</div>
+					</MagneticButton>
 				</div>
 
 				<div className='flex justify-between items-center mt-[6rem]'>

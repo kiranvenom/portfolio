@@ -48,7 +48,7 @@ const CustomCursor = () => {
 	return (
 		<div
 			ref={cursorRef}
-			className='fixed w-[80px] h-[80px] rounded-full backdrop-blur pointer-events-none transition-transform duration-150 ease-out transform -translate-x-1/2 -translate-y-1/2 border border-[#002b99]'
+			className='fixed w-[40px] h-[40px] rounded-full backdrop-blur pointer-events-none transition-transform duration-150 ease-out transform -translate-x-1/2 -translate-y-1/2 border border-[#002b99]'
 			style={{ zIndex: 9999 }}></div>
 	);
 };

@@ -175,7 +175,7 @@ nav {
 	letter-spacing: 0.05rem;
 	text-transform: capitalize;
 	display: block;
-	margin-bottom: 0.5rem;
+	/* margin-bottom: 0.5rem; */
 	font-family: blatant;
 }
 

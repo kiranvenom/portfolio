@@ -40,17 +40,19 @@ const HeroSection = () => {
 			<h1
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={handleMouseLeave}
-				className='heroBefore z-40'
-				style={{ lineHeight: '4.6rem' }}>
+				className='heroBefore z-40 font-blatant cursor-none'
+				style={{
+					lineHeight: '4.6rem',
+					fontSize: '6rem',
+					fontWeight: '600',
+				}}>
 				Pixels & Passion
 			</h1>
-			<p className='mt-6 font-blatant'>
+			<p className='mt-6'>
 				A skilled MERN stack developer with hands-on experience in
 				MongoDB, Express, React, and Node.js. Passionate about crafting
 				dynamic web applications, tackling complex challenges, and
-				thriving in collaborative team environments. Pursued a career in
-				development to transform creative ideas into functional,
-				user-centric solutions.
+				thriving in collaborative team.
 			</p>
 
 			<div className='mt-6'>

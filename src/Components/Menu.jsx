@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import { RevealLinks } from './RevealLinks';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdOutlineMail } from 'react-icons/md';
+import MagneticButton from './MagneticButton';
+import { IoMdClose } from 'react-icons/io';
+
+import links from '../utils/links';
 
 const Menu = ({ setIsMenuOpen }) => {
 	const closeMenu = () => {
@@ -64,40 +68,85 @@ const Menu = ({ setIsMenuOpen }) => {
 						<div className='w-1/2'>
 							<ul className='flex flex-col justify-end h-full'>
 								<div onClick={closeMenu}>
+									<RevealLinks linkName='Home' to='/' />
+								</div>
+								<div onClick={closeMenu}>
 									<RevealLinks
 										linkName='Projects'
 										to='/works'
 									/>
 								</div>
 								<RevealLinks linkName='Services' />
-								<RevealLinks linkName='Contacts' />
+								<div onClick={closeMenu}>
+									<RevealLinks
+										linkName='Contact'
+										to='/contact'
+									/>
+								</div>
 							</ul>
 						</div>
 						<div className='w-1/2'>
 							<div className='flex justify-end items-end h-full'>
 								<div className='flex flex-col h-full justify-between items-end'>
-									<h2
+									{/* <h2
 										className='cursor-pointer'
 										onClick={closeMenu}>
 										Close
-									</h2>
+									</h2> */}
+									<div
+										className='cursor-pointer flex items-center gap-4'
+										onClick={closeMenu}>
+										<h2>Close</h2>{' '}
+										<MagneticButton>
+											<div>
+												<IoMdClose
+													size={40}
+													className='border border-slate-500 rounded-full p-2'
+												/>
+											</div>
+										</MagneticButton>
+									</div>
 									<div>
 										<h2 className=' font-blatant text-2xl'>
-											km060360@gmail.com
+											{links.email}
 										</h2>
 										<p className='text-right font-blatant text-xl'>
-											+91 9741 734 482
+											+91 {links.phoneNumber[1]}
 										</p>
 										<div className='flex items-center justify-end gap-2 mt-6'>
-											<FaLinkedin
-												size={30}
-												color='#0A66C2'
-											/>
-											<FaGithub size={30} />
-											<MdOutlineMail
-												size={30}
-												color='red'
-											/>
+											<MagneticButton>
+												<div>
+													<a
+														target='_blank'
+														href={`${links.linkedIn}`}>
+														<FaLinkedin
+															size={30}
+															color='#0A66C2'
+														/>
+													</a>
+												</div>
+											</MagneticButton>
+											<MagneticButton>
+												<div>
+													<a
+														target='_blank'
+														href={`${links.gitHub}`}>
+														<FaGithub size={30} />
+													</a>
+												</div>
+											</MagneticButton>
+											<MagneticButton>
+												<div>
+													<a
+														target='_blank'
+														href={`mailto:${links.email}`}>
+														<MdOutlineMail
+															size={30}
+															color='red'
+														/>
+													</a>
+												</div>
+											</MagneticButton>
 										</div>
 									</div>
 								</div>

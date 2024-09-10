@@ -10,6 +10,7 @@ import Menu from './Components/Menu';
 import { AnimatePresence } from 'framer-motion';
 import useScrollToTop from './hook/useScrollToTop';
 import Footer1 from './Components/Footer1';
+import Contact from './pages/Contact';
 
 const App = () => {
 	useScrollToTop();
@@ -21,12 +22,13 @@ const App = () => {
 			<AnimatePresence>
 				{isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
 			</AnimatePresence>
-			{/* <CustomCursor /> */}
+			<CustomCursor />
 
 			<Routes>
 				<Route index path='/' element={<Home />} />
 				<Route index path='/works' element={<AllWorks />} />
 				<Route index path='/works/:id' element={<Work />} />
+				<Route index path='/contact' element={<Contact />} />
 			</Routes>
 
 			<Footer1 />

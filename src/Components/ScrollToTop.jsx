@@ -9,7 +9,9 @@ const ScrollToTop = () => {
 	};
 
 	return (
-		<button onClick={handleUp}>
+		<button
+			className='border border-[#353535] rounded-full p-2'
+			onClick={handleUp}>
 			<IoMdArrowUp size={30} />
 		</button>
 	);

@@ -12,17 +12,18 @@ const Testimonial = () => {
 			<div className='max-w-[1200px] m-auto flex justify-between w-full mb-10'>
 				<h1 className='text-5xl'>Testimonial</h1>
 				<div className='flex gap-6'>
-					<FaArrowLeft className='cursor-pointer left w-[40px] border h-[40px] p-3 rounded-full hover:scale-110 transition-all' />
-					<FaArrowRight className='cursor-pointer right w-[40px] border h-[40px] p-3 rounded-full hover:scale-110 transition-all' />
+					<FaArrowLeft className='cursor-pointer left w-[40px] border h-[40px] p-3 rounded-full hover:scale-110 transition-all bg-[#131a2b]' />
+					<FaArrowRight className='cursor-pointer right w-[40px] border h-[40px] p-3 rounded-full hover:scale-110 transition-all bg-[#131a2b]' />
 				</div>
 			</div>
-			<div className='testimonalSection'>
+			<div className='testimonalSection container'>
 				<Swiper
 					spaceBetween={20}
 					slidesPerView={3}
 					loop={true}
 					autoplay={{
 						delay: 1000,
+						pauseOnMouseEnter: true,
 					}}
 					speed={1000}
 					navigation={{ nextEl: '.left', prevEl: '.right' }}

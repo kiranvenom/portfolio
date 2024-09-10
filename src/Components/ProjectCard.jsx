@@ -23,7 +23,7 @@ const ProjectCard = ({ src, rr, title }) => {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: imgRef.current,
-					start: 'top 60%',
+					start: 'top 75%',
 					end: 'top 20%',
 					scrub: 1,
 					// markers: true,
@@ -74,7 +74,7 @@ const ProjectCard = ({ src, rr, title }) => {
 					}}>
 					<img
 						ref={imgRef}
-						className='w-full rounded-lg'
+						className='w-full'
 						src={src}
 						alt={title}
 					/>

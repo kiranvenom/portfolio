@@ -2,6 +2,7 @@ import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { projects } from '../../projects.json';
 import { Link } from 'react-router-dom';
+import ComeUpText from './ComeUpText';
 
 const AllworksProject = ({ project, idx }) => {
 	const myImg = projects[idx].showcaseImages[0].imagePath;
@@ -44,14 +45,17 @@ const AllworksProject = ({ project, idx }) => {
 				onHoverEnd={() => setIsHovered(false)}>
 				<div className='h-[70vh] mb-2'>
 					<img
-						className='w-full h-full object-cover'
+						className='w-full h-full object-cover rounded-xl'
 						src={`http://localhost:3000/src/${myImg}`}
 						alt='img'
 					/>
 				</div>
-				<h2 className='font-blatant font-extrabold text-4xl capitalize'>
+				{/* <h2 className='font-blatant font-extrabold text-4xl capitalize'>
 					{project.title}
-				</h2>
+				</h2> */}
+				<div className='capitalize'>
+					<ComeUpText text={project.title} className='text-4xl' />
+				</div>
 			</motion.div>
 		</Link>
 	);
