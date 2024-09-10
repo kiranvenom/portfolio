@@ -37,7 +37,19 @@ const Footer = () => {
 					</div>
 					<MagneticButton>
 						<div>
-							<FaWhatsapp size={50} color='#0EC045' />
+							<a
+								target='_blank'
+								href='https://wa.me/919741734482?text=Hello%20I%20am%20interested%20in%20your%20services'>
+								{/* <div>
+									<FaWhatsapp size={50} color='#0EC045' />
+								</div> */}
+								<div className='hover:drop-shadow-[0_0_15px_rgba(14,192,69,1)] transition duration-300'>
+									<FaWhatsapp
+										size={50}
+										className='text-[#0EC045]'
+									/>
+								</div>
+							</a>
 						</div>
 					</MagneticButton>
 				</div>

@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Nav from './Components/Nav';
 import CustomCursor from './Components/CustomCursor';
 import Work from './pages/Work';
-import Footer from './Components/Footer';
 import AllWorks from './pages/AllWorks';
 import Menu from './Components/Menu';
 import { AnimatePresence } from 'framer-motion';

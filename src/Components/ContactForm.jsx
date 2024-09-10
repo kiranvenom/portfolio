@@ -63,7 +63,9 @@ const ContactForm = () => {
 				</div>
 
 				<div className='flex items-center justify-end mt-12'>
-					<Button className='text-xl rounded-full border pt-3'>
+					<Button
+						type='submit'
+						className='text-xl rounded-full border pt-3'>
 						<div className='flex items-center gap-2 hover:gap-4 transition-all'>
 							<h2>Submit</h2>
 							<FaArrowRight />

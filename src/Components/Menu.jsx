@@ -76,7 +76,7 @@ const Menu = ({ setIsMenuOpen }) => {
 										to='/works'
 									/>
 								</div>
-								<RevealLinks linkName='Services' />
+								{/* <RevealLinks linkName='Services' /> */}
 								<div onClick={closeMenu}>
 									<RevealLinks
 										linkName='Contact'

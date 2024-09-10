@@ -1,16 +1,8 @@
 import { CiCircleChevDown } from 'react-icons/ci';
 import ContactForm from '../Components/ContactForm';
+import { useEffect, useState } from 'react';
 
 const Contact = () => {
-	const date = new Date();
-	let hours = date.getHours();
-	const minutes = date.getMinutes();
-	const ampm = hours >= 12 ? 'PM' : 'AM';
-
-	hours = hours % 12 || 12;
-
-	console.log(hours, minutes, ampm);
-
 	return (
 		<div className='mt-[6rem]'>
 			<div className='container'>
@@ -31,7 +23,6 @@ const Contact = () => {
 				<div className='h-[75vh]'>
 					<div className='flex items-center justify-between'>
 						<h2 className='text-6xl font-blatant'>Say Hello!</h2>
-						<h2 className='text-4xl font-blatant text-[#767E7F]'>{`${hours} : ${minutes} ${ampm}`}</h2>
 					</div>
 					<div className='h-full'>
 						<ContactForm />
